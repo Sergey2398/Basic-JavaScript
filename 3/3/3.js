@@ -15,14 +15,7 @@ const b = +prompt('Введите число B');
 const c = +prompt('Введите число C');
 
 function maxNum(a, b, c) {
-  let maximal;
-  if (a > b && a > c) {
-    maximal = a;
-  } else if (b > a && b > c) {
-    maximal = b;
-  } else {
-    maximal = c;
-  }
+  const maximal = Math.max(a, b, c);
   return console.log(`Максимальное значение среди чисел ${a}, ${b}, ${c} равно ${maximal}.`);
 } 
 

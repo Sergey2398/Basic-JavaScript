@@ -10,15 +10,15 @@
 */
 
 function salary(money) {
-	console.log(Math.round(money * 0.87));
+	return (money * 0.87).toFixed(2);
 }
 
 const userMoney = +prompt('Введите ваше число');
 
-if (userMoney !== Number(userMoney)) {
+if (Number.isFinite(userMoney) === false) {
   console.log('Значение задано неверно');
 } else {
-  salary(userMoney);
+  console.log(`Размер заработной платы за вычетом налогов равен ${salary(userMoney)}.`);
 }
 
 
