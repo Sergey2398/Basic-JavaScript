@@ -12,4 +12,14 @@ xxxx
 xxxxx
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+for (i = 0; i < 20; i++, console.log('x'.repeat(i))) {}
+
+
+let pyramid = '';
+for (i = 1; i <= 20; i++) {
+  for (j = 0; j < i; j++) {
+    pyramid += 'x';
+  }
+  pyramid += '\n';
+}
+console.log(pyramid);

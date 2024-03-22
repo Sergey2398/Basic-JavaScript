@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
 /*
 Используя Math.random() необходимо сгенерировать массив, содержащий 5 цифр в 
@@ -14,4 +14,33 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const arrLength = 5;
+const numbers = [Array(arrLength)];
+
+for (i = 0; i < arrLength; i++) {
+	numbers[i] = Math.floor(Math.random() * 10);
+}
+
+console.log(numbers);
+
+// Определяем и выводим сумму элементов массива
+let arrSum = 0;
+for (i = 0; i < numbers.length; i++) {
+	arrSum += numbers[i];
+}
+
+console.log(arrSum);
+
+// Определяем и выводим минимальное значение массива
+console.log(Math.min(...numbers));
+
+// Создаём новый массив
+let newNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+	if (numbers[i] === 3) {
+		newNumbers.push(i);
+	}
+}
+
+console.log(newNumbers);
