@@ -15,7 +15,7 @@
 */
 
 const arrLength = 5;
-const numbers = [Array(arrLength)];
+const numbers = [];
 
 for (i = 0; i < arrLength; i++) {
 	numbers[i] = Math.floor(Math.random() * 10);
@@ -35,7 +35,7 @@ console.log(arrSum);
 console.log(Math.min(...numbers));
 
 // Создаём новый массив
-let newNumbers = [];
+const newNumbers = [];
 
 for (let i = 0; i < numbers.length; i++) {
 	if (numbers[i] === 3) {

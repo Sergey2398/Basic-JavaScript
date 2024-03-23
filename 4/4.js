@@ -16,8 +16,8 @@ for (i = 0; i < 20; i++, console.log('x'.repeat(i))) {}
 
 
 let pyramid = '';
-for (i = 1; i <= 20; i++) {
-  for (j = 0; j < i; j++) {
+for (let i = 1; i <= 20; i++) {
+  for (let j = 0; j < i; j++) {
     pyramid += 'x';
   }
   pyramid += '\n';
