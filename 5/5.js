@@ -17,4 +17,20 @@ const ru = [
   "воскресенье",
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+let weekDayObject = {};
+for (let i = 0; i < en.length; i++) {
+  weekDayObject[en[i]] = ru[i];
+}
+
+console.log(weekDayObject);
+
+// Альтернативное решение в виде функции 
+
+function construct(arr1, arr2) {
+  let weekDayObject = {};
+	for (let i = 0; i < arr1.length; i++) {
+		weekDayObject[arr1[i]] = arr2[i];
+	}
+  return weekDayObject;
+}
+console.log(construct(en, ru));

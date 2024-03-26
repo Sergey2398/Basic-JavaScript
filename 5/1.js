@@ -15,4 +15,9 @@ const numbers = {
   key7: 7,
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+
+for (let key in numbers) {
+  if (numbers[key] >= 3) {
+    console.log(`${key}: ${numbers[key]}`);
+  }
+}
