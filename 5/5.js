@@ -27,6 +27,9 @@ console.log(weekDayObject);
 // Альтернативное решение в виде функции 
 
 function construct(arr1, arr2) {
+  if (arr1.length !== arr2.length || arr1.length === 0 || arr2.length === 0) {
+    return {};
+  }
   const weekDayObject = {};
 	for (let i = 0; i < arr1.length; i++) {
 		weekDayObject[arr1[i]] = arr2[i];
