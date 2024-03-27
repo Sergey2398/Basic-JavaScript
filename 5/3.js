@@ -23,8 +23,6 @@ const products = [
   },
 ];
 
-products.forEach(function(obj) {
-  obj.price *= 0.85;
-});
+products.forEach((obj) => obj.price *= 0.85);
 
 console.log(products);

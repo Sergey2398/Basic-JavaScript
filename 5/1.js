@@ -16,7 +16,7 @@ const numbers = {
 };
 
 
-for (let key in numbers) {
+for (const key in numbers) {
   if (numbers[key] >= 3) {
     console.log(`${key}: ${numbers[key]}`);
   }

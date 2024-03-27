@@ -32,7 +32,7 @@ const products = [
 ];
 
 // Задание 1 --->
-const productsWithPhoto = products.filter((obj) => obj.photos.length > 0);
+const productsWithPhoto = products.filter((obj) => obj.photos?.length > 0);
 
 console.log(productsWithPhoto);
 
